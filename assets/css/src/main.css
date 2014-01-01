@@ -63,6 +63,5 @@ body {
 @media only screen and (orientation: portrait) and (max-device-width: 960px) {
 	#container {
 		transform: rotate(90deg);
-		transform-origin: 0 0;
 	}
 }
