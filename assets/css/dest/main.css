@@ -2,6 +2,13 @@ body {
 	-webkit-text-size-adjust: 100%;
 	font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
 }
+footer {
+	text-align: center;
+	color: #999;
+}
+footer a {
+	color: #666;
+}
 
 #container,
 #front,
