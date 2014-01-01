@@ -36,7 +36,7 @@
     </div>
     <div class="share" ng-click="$event.stopPropagation()">
       share on
-      <a href="https://twitter.com/intent/tweet?text={{ shareText }}&url={{ url }}" target="_blank" rel="nofollow">twitter</a>
+      <a href="https://twitter.com/intent/tweet?text={{ shareText }}{{ twTitle }}&url={{ url }}" target="_blank" rel="nofollow">twitter</a>
       <a href="https://www.facebook.com/dialog/feed?app_id={{ fbAppId }}&display=popup&caption={{ shareText }}&link={{ url }}&redirect_uri={{ url }}" target="_blank" rel="nofollow">facebook</a>
     </div>
   </div>

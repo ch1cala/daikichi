@@ -4,8 +4,8 @@ angular.module('daikichiApp', [])
     $scope.result = null;
     $scope.shareText = '';
     $scope.fbAppId = '640131609366815';
-//    $scope.url = encodeURIComponent($location.absUrl());
-    $scope.url = encodeURIComponent('http://daikichi.energize.io');
+    $scope.url = encodeURIComponent($location.absUrl());
+    $scope.twTitle = encodeURIComponent('\n大吉おみくじ');
 
     $http.get('assets/results.json')
       .success(function(data){
