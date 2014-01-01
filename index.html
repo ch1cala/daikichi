@@ -13,8 +13,10 @@
 <div id="container" ng-controller="DrawCtrl" ng-show="result" ng-class="{flip:isFliped}">
   <div id="front" ng-click="isFliped=true"></div>
   <div id="back" ng-click="isFliped=false">
-    <div class="num">第{{ result.num }}番</div>
-    <div class="text">{{ result.text }}</div>
+    <div class="result">
+      <h1>第{{ result.num }}番</h1>
+      <p>{{ result.text }}</p>
+    </div>
   </div>
 </div>
 
