@@ -1,0 +1,15 @@
+{
+  "name": "daikichi-omikuji",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "~1.2.6"
+  },
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "components"
+  ],
+  "exportsOverride": {
+  }
+}

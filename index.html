@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <title>大吉おみくじ</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <link rel="apple-touch-icon" href="icon.png">
+  <link rel="stylesheet" href="assets/css/dest/main.css">
+  <script src="assets/libs/angular/angular.js"></script>
+</head>
+<body ng-app="daikichiApp">
+
+<div id="container" ng-controller="DrawCtrl" ng-show="result" ng-class="{flip:isFliped}">
+  <div id="front" ng-click="isFliped=true"></div>
+  <div id="back" ng-click="isFliped=false">
+    <div class="num">第{{ result.num }}番</div>
+    <div class="text">{{ result.text }}</div>
+  </div>
+</div>
+
+<script src="assets/main.js"></script>
+</body>
+</html>
