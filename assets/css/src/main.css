@@ -59,9 +59,3 @@ body {
 .result p {
 	font-size: 40px;
 }
-
-@media only screen and (orientation: portrait) and (max-device-width: 960px) {
-	#container {
-		transform: rotate(90deg);
-	}
-}
