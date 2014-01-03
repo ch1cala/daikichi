@@ -1,6 +1,7 @@
 angular.module('daikichiApp', [])
 
   .controller('DrawCtrl', function($scope, $http, $location){
+
     $scope.result = null;
     $scope.shareText = '';
     $scope.fbAppId = '640131609366815';

@@ -11,5 +11,8 @@
     "components"
   ],
   "exportsOverride": {
+    "angular": {
+      "js": ["*.js", "*.map"]
+    }
   }
 }

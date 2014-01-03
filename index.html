@@ -8,8 +8,8 @@
   <meta property="og:image" content="http://daikichi.energize.io/icon.png">
   <meta property="fb:admins" content="586873563">
   <link rel="apple-touch-icon" href="icon.png">
-  <link rel="stylesheet" href="assets/css/dest/main.css">
-  <script src="assets/libs/angular/angular.js"></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/libs/angular/js/angular.min.js"></script>
 </head>
 <body ng-app="daikichiApp">
 <script>
@@ -24,12 +24,12 @@
 
 
 <div id="container" ng-controller="DrawCtrl" ng-show="result" ng-class="{flip:isFliped}">
-  <div id="front" ng-click="isFliped=true">
+  <div class="slip front" ng-click="isFliped=true">
     <div class="open">
       <img src="assets/images/open.png" alt="ひらく" />
     </div>
   </div>
-  <div id="back" ng-click="isFliped=false">
+  <div class="slip back" ng-click="isFliped=false">
     <div class="result">
       <h1>第{{ result.num }}番</h1>
       <p>{{ result.text }}</p>
@@ -47,6 +47,6 @@
   designed by <a href="http://dendesign.jp/">Den Design</a>,
   powered by <a href="https://www.facebook.com/EnergizeKK">Energize K.K.</a>
 </footer>
-<script src="assets/main.js"></script>
+<script src="assets/js/main.min.js"></script>
 </body>
 </html>

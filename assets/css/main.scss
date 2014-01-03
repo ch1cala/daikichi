@@ -1,0 +1,93 @@
+@charset "UTF-8";
+@import "compass/css3/transform";
+@import "compass/css3/transition";
+@import "compass/utilities/sprites";
+
+$slip: sprite-map("slip/*.png", $layout: vertical);
+$width: 960px;
+$height: 540px;
+
+body {
+  text-size-adjust: 100%;
+  font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+  color: #999;
+}
+
+footer {
+  text-align: center;
+}
+
+a {
+  color: #966;
+  text-decoration: none;
+}
+
+#container {
+  position: relative;
+  width: $width;
+  height: $height;
+  margin: auto;
+  @include perspective(1000px);
+}
+
+.slip {
+  position: absolute;
+  width: $width;
+  height: $height;
+  background-color: #FFF;
+  background-image: $slip;
+  background-repeat: no-repeat;
+
+  @include backface-visibility(hidden);
+  @include transition(2s);
+  @include transform-style(preserve-3d);
+}
+
+.slip.front {
+  z-index: 2;
+  @include rotateY(0);
+  @include sprite($slip, front);
+}
+.slip.back {
+  @include rotateY(-180deg);
+  @include sprite($slip, back);
+}
+
+.flip {
+  .front {
+    @include rotateY(180deg);
+  }
+  .back {
+    @include rotateY(0);
+  }
+}
+
+.open {
+  position: absolute;
+  top: 200px;
+  left: 500px;
+}
+
+.result {
+  color: #ff3c00;
+  position: relative;
+  width: 700px;
+  left: 230px;
+
+  h1 {
+    font-size: 80px;
+    line-height: 80px;
+    vertical-align: bottom;
+  }
+
+  p {
+    font-size: 40px;
+  }
+}
+
+.share {
+  position: absolute;
+  bottom: 30px;
+  width: 100%;
+  text-align: center;
+}
