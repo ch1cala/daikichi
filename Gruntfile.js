@@ -36,7 +36,8 @@ module.exports = function(grunt) {
         options: {
           mangle: false,
           sourceMap: 'assets/js/main.min.map',
-          sourceMapRoot: '/'
+          sourceMapRoot: '/',
+          sourceMappingURL: '/assets/js/main.min.map'
         },
         files: {
           'assets/js/main.min.js': ['assets/js/main.js']
